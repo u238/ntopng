@@ -82,8 +82,8 @@ Ntop::Ntop(char *appName) {
   can_send_icmp = Utils::isPingSupported();
 
 #ifndef WIN32
-  if(can_send_icmp)
-    cping = new (std::nothrow) ContinuousPing();
+//  if(can_send_icmp)
+//    cping = new (std::nothrow) ContinuousPing();
 #endif
 
   /* nDPI handling */

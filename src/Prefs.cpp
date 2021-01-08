@@ -229,6 +229,7 @@ void nDPIusage() {
 
 /* C-binding needed by Win32 service call */
 void usage() {
+    return;
   printf("ntopng %s%s v.%s - " NTOP_COPYRIGHT "\n\n"
 	 "Usage:\n"
 	 "  ntopng <configuration file path>\n"
@@ -1381,7 +1382,7 @@ int Prefs::setOption(int optkey, char *optarg) {
       printf("License Hash:\t%s\n",      ntop->getPro()->get_license());
     }
 #endif
-    exit(0);
+//    exit(0);
     break;
 
   case 'X':
