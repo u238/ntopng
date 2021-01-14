@@ -370,6 +370,7 @@ class Ntop {
   inline NtopGlobals*      getGlobals()              { return(globals);             };
   inline Trace*            getTrace()                { return(globals->getTrace()); };
   inline Redis*            getRedis()                { return(redis);               };
+  inline Redis*            setRedis(Redis * newredis){ redis = newredis; return(redis);               };
   inline TimelineExtract*  getTimelineExtract()      { return(extract);             };
 #ifndef HAVE_NEDGE
   inline ExportInterface*  get_export_interface()    { return(export_interface);    };
